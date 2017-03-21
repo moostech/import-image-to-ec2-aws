@@ -82,14 +82,11 @@ def main():
         sys.exit()
 
     #check if enviroment variables are set correctly
-    try:
-        os.environ["LC_ALL"]
-    except:
-        #print '    - Setting enviroment variables (i.e., LC_ALL) required for running AWS CLI'
+    if not "LC_ALL" in os.environ:
         os.environ["LC_ALL"] = "en_US.UTF-8"
-        os.environ["LC_CTYPE"] = "UTF-8"
-        os.environ["LANG"] = "en_US"
-
+        #os.environ["LC_CTYPE"] = "UTF-8"
+        #os.environ["LANG"] = "en_US"
+        
     #check if the bucket name exists
     try:
         output = pexpect.run('aws s3 ls')
