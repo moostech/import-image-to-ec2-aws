@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Created on 2017-3-13
+# Created on 2017-3-19
 # 
 # @author: Mostafa Mostafa
 # @copyright: Nokia 2017
@@ -10,6 +10,8 @@
 #    To run the script, you need to install pexpect and AWS-cli, just type:
 #        - pip install pexpect
 #        - pip install --upgrade --user awscli
+#
+#    This script is tested on Linux and MAC OS, but not on windows.
 #
 # USAGE: 
 #     python import_ami_to_ec2.py
