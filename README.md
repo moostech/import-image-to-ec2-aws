@@ -27,11 +27,11 @@ Before you run the script, you should have Python, pexpect, and AWS CLI installe
 To use the script, type the script name and pass the aws parameters. 
 
 Mandatory parameters are:
-* access_key ``              Enter your AWS Access Key (i.e., BKIAIB6QLXA536P2U4BQ)``
-* secret_key <pre>              Enter your AWS Secret Key (i.e., oJdKhwd204uJgP0+2v96TDV6rs)</pre>
-* region_name <pre>              Enter your AWS S3 Region (i.e., us-west-2)</pre>
-* nsg_filename <pre>             Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)</pre>
-* bucket_name <pre>              Enter your AWS S3 Bucket Name (i.e., nsgami)</pre>
+* access_key Enter your AWS Access Key (i.e., BKIAIB6QLXA536P2U4BQ)
+* secret_key &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enter your AWS Secret Key (i.e., oJdKhwd204uJgP0+2v96TDV6rs)
+* region_name &nbsp;<space>&nbsp;<space>&nbsp;<space>  Enter your AWS S3 Region (i.e., us-west-2)
+* nsg_filename              Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)
+* bucket_name              Enter your AWS S3 Bucket Name (i.e., nsgami)
 
 >Note: For AWS root account credentials, you get credentials, such as access keys or key pairs, from the Security Credentials page in the AWS Management Console. For more information, please go to AWS webpage: http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html
 
