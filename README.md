@@ -4,7 +4,7 @@
 
 Hello there. Are you bored from manually importing the RAW VM image from your S3 to your Amazon EC2? if yes, then don't worry, I've created a python script that automates this process for you.
 
-Here is the sccript details:
+### Here is the sccript details:
 1. Verifies AWS is installed on the running machine
 2. Configures aws configure command
 3. Creates a trusted policy to be able to perform certain AWS operation
@@ -16,7 +16,7 @@ Here is the sccript details:
 9. Removes the temp files (trust-policy.json, role-policy.json, containers.json)
 10. Check the status of loading the AMI image to your EC2. 
 
-Prepare your enviroment:
+### Prepare your enviroment:
 
 Before you run the script, you should have Python, pexpect, and AWS CLI installed. If pexpect and AWS cli are not installed, just type:
 - pip install pexpect
