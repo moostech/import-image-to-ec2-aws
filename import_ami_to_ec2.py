@@ -3,7 +3,7 @@
 # Created on 2017-3-19
 # 
 # @author: Mostafa Mostafa
-# @copyright: Nokia 2017
+# @copyright: This is a community script, anyone can use it.
 # @version: 1.0.0
 # 
 # PRE-REQUISTES:
