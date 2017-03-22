@@ -4,7 +4,7 @@
 
 Hello there. Are you bored from manually importing the RAW VM image from your S3 to your Amazon EC2? if yes, then don't worry, I've created a python script that automates this process for you.
 
-### Here is the sccript details:
+### Here is the script details:
 1. Verifies AWS is installed on the running machine
 2. Configures "aws configure" command to connect to your AWS account
 3. Creates a trusted policy to be able to perform certain AWS operation
