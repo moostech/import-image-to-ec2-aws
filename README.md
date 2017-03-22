@@ -1,6 +1,6 @@
 ##Caution! This is a community script, intended for Nuage VNS PoCs and Labs. It is not supported by Nuage. 
 
-# Import NSG RAW Image from S3 to your Amazon EC2 account
+### Import your NSG raw Image from S3 to your Amazon EC2 account
 
 Hello there. Are you bored from manually importing the RAW VM image from your S3 to your Amazon EC2? if yes, then don't worry, I've created a python script that automates this process for you.
 
@@ -19,7 +19,7 @@ Here is the sccript details:
 Prepare your enviroment:
 Before you run the script, you should have Python, pexpect, and AWS CLI installed.
 
-## Quick Start
+### Quick Start
 
 To use the script, just type the script name and pass the aws parameters. 
 
@@ -30,7 +30,8 @@ Mandatory parameters are:
   nsg_filename  Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)
   bucket_name   Enter your AWS S3 Bucket Name (i.e., nsgami)
 
-Here is an example of how to run it:
-python import_ami_to_ec2.py <access_key> <secret_key> <region_name> <nsg_filename> <bucket_name>
+#### Here is an example of how to run it:
+
+*python import_ami_to_ec2.py <access_key> <secret_key> <region_name> <nsg_filename> <bucket_name>*
 
 `python import_ami_to_ec2.py BKIAIB6QLXA536P2U4BQ oJdKhwd204uJgP0+2v96TDV6rs us-west-2 Nuage-NSG-4.0.7-129-AWS.raw nsgami`
