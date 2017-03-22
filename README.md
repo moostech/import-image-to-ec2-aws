@@ -6,15 +6,13 @@ Hello there. Are you bored from manually importing the RAW VM image from your S3
 
 ### Here is the sccript details:
 1. Verifies AWS is installed on the running machine
-2. Configures "aws configure" command
+2. Configures "aws configure" command to connect to your AWS account
 3. Creates a trusted policy to be able to perform certain AWS operation
 4. Creates a role named vmimport and give VM Import/Export access to it 
-5. Creates a role policy to be able to perform certain AWS operation
-6. Attaches the policy to the role 
-7. Creates container file, which contains information about the image
-8. Executes the role policy
-9. Removes the temp files (trust-policy.json, role-policy.json, containers.json)
-10. Check the status of loading the AMI image to your EC2. 
+5. Attaches the policy to the role 
+6. Creates a file, which contains information about the image
+7. Executes the role policy
+8. Checks the status of loading the AMI image to your EC2. 
 
 ### Prepare your enviroment:
 
