@@ -1,4 +1,4 @@
-##Caution! This is a community script, intended for Nuage VNS PoCs and Labs. It is not supported by Nuage. 
+##Caution! This is a community script, intended for Nuage VNS PoCs and Labs. It is not meant to be used in production. 
 
 ### Import your NSG raw Image from S3 to your Amazon EC2 account
 
