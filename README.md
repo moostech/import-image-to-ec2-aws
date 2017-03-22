@@ -6,7 +6,7 @@ Hello there. Are you bored from manually importing the RAW VM image from your S3
 
 ### Here is the sccript details:
 1. Verifies AWS is installed on the running machine
-2. Configures aws configure command
+2. Configures "aws configure" command
 3. Creates a trusted policy to be able to perform certain AWS operation
 4. Creates a role named vmimport and give VM Import/Export access to it 
 5. Creates a role policy to be able to perform certain AWS operation
