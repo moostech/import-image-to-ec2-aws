@@ -17,20 +17,23 @@ Here is the sccript details:
 10. Check the status of loading the AMI image to your EC2. 
 
 Prepare your enviroment:
-Before you run the script, you should have Python, pexpect, and AWS CLI installed.
+
+Before you run the script, you should have Python, pexpect, and AWS CLI installed. If pexpect and AWS cli are not installed, just type:
+- pip install pexpect
+- pip install --upgrade --user awscli
 
 ### Quick Start
 
-To use the script, just type the script name and pass the aws parameters. 
+To use the script, type the script name and pass the aws parameters. 
 
 Mandatory parameters are:
-* access_key    Enter your AWS Access Key (i.e., BKIAIB6QLXA536P2U4BQ)
-* secret_key    Enter your AWS Secret Key (i.e., oJdKhwd204uJgP0+2v96TDV6rs)
-* region_name   Enter your AWS S3 Region (i.e., us-west-2)
-* nsg_filename  Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)
-* bucket_name   Enter your AWS S3 Bucket Name (i.e., nsgami)
+* access_key <pre>              Enter your AWS Access Key (i.e., BKIAIB6QLXA536P2U4BQ)</pre>
+* secret_key <pre>              Enter your AWS Secret Key (i.e., oJdKhwd204uJgP0+2v96TDV6rs)</pre>
+* region_name <pre>              Enter your AWS S3 Region (i.e., us-west-2)</pre>
+* nsg_filename <pre>             Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)</pre>
+* bucket_name <pre>              Enter your AWS S3 Bucket Name (i.e., nsgami)</pre>
 
->Note: For AWS root account credentials, you get credentials, such as access keys or key pairs, from the Security Credentials page in the AWS Management Console. For IAM user credentials, you get credentials from the IAM console. For more information, please go to AWS webpage: http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html
+>Note: For AWS root account credentials, you get credentials, such as access keys or key pairs, from the Security Credentials page in the AWS Management Console. For more information, please go to AWS webpage: http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html
 
 
 #### Here is an example of how to run it:
