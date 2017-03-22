@@ -30,8 +30,14 @@ Mandatory parameters are:
   nsg_filename  Enter your NSG file name (i.e., Nuage-NSG-4.0.7-129-AWS.raw)
   bucket_name   Enter your AWS S3 Bucket Name (i.e., nsgami)
 
+>Note: For AWS root account credentials, you get credentials, such as access keys or key pairs, from the Security Credentials page in the AWS Management Console. For IAM user credentials, you get credentials from the IAM console. For more information, please go to AWS webpage: http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html
+
+
 #### Here is an example of how to run it:
 
 *python import_ami_to_ec2.py <access_key> <secret_key> <region_name> <nsg_filename> <bucket_name>*
 
-`python import_ami_to_ec2.py BKIAIB6QLXA536P2U4BQ oJdKhwd204uJgP0+2v96TDV6rs us-west-2 Nuage-NSG-4.0.7-129-AWS.raw nsgami`
+```
+python import_ami_to_ec2.py BKIAIB6QLXA536P2U4BQ oJdKhwd204uJ96TDV6rs us-west-2 Nuage-NSG-4.0.7-129-AWS.raw nsgami
+```
+
