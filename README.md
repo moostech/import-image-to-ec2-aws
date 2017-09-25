@@ -1,8 +1,8 @@
 ##Caution! This is a community script, intended for Nuage VNS PoCs and Labs. It is not meant to be used in production. 
 
-### Import your NSG raw Image from S3 to your Amazon EC2 account
+### Import your OVA/VMDK/RAW Image from S3 to your Amazon EC2 account
 
-Hello there. Are you bored from manually importing the RAW VM image from your S3 to your Amazon EC2? if yes, then don't worry, I've created a python script that automates this process for you.
+Hello there. Are you bored from manually importing the OVA/VMDK/RAW VM image from your S3 to your Amazon EC2? if yes, then don't worry, I've created a python script that automates this process for you.
 
 ### Here is the script details:
 1. Verifies AWS is installed on the running machine
@@ -12,7 +12,7 @@ Hello there. Are you bored from manually importing the RAW VM image from your S3
 5. Attaches the policy to the role 
 6. Creates a file, which contains information about the image
 7. Executes the role policy
-8. Checks the status of loading the AMI image to your EC2. 
+8. Checks the status of loading the OVA/VMDK/AMI image to your EC2. 
 
 ### Prepare your enviroment:
 
@@ -39,6 +39,12 @@ Mandatory parameters are:
 *python import_ami_to_ec2.py <access_key> <secret_key> <region_name> <nsg_filename> <bucket_name>*
 
 ```
-python import_ami_to_ec2.py BKIAIB6QLXA536P2U4BQ oJdKhwd204uJ96TDV6rs us-west-2 Nuage-NSG-4.0.7-129-AWS.raw nsgami
+python import_ami_to_ec2.py BKIAIB6QLXA536PcU4BQ oJdKhwd2cccJ96TDV6rs us-west-2 Nuage-NSG-4.0.7-129-AWS.raw nsgami
 ```
+*python import_ova_to_ami.py <access_key> <secret_key> <region_name> <vm_filename> <bucket_name>*
+```
+python import_ova_to_ami.py AKIAIB6QLXA53CC2U4BQ oJdKhwdcc4uJgD9sENCCjlCCCdHP0+2vCCTDVCCs us-west-2 linux_vm.ova Mybucket
+```
+
+
 
