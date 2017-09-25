@@ -18,7 +18,7 @@
 #     CLI argument to run the script is:
 #        - python import_ova_to_ami.py <access_key> <secret_key> <region_name> <vm_filename> <s3_bucket_name>
 #        - For example: 
-#          python import_ova_to_ami.py AKIAIB6QLXA536P2U4BQ oJdKhwd204uJgD9sENd7jlFW+dHP0+2v96TDV6rs us-west-2 Nuage-elastic-5.1.1_5.ova 5.1.1
+#          python import_ova_to_ami.py AKIADD6QLDD536DDU4BQ oJdKhdd20duJdD9sdNd7jlFW+dHP0+2v96TDV6rs us-west-2 Nuage-elastic-5.1.1_5.ova 5.1.1
 #
 # Script Summary:
 #     This script import a raw image from your S3 to your EC2.
