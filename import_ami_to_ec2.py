@@ -205,7 +205,11 @@ def main():
     print '8) Execute the role policy'
     output = pexpect.run('aws ec2 import-image --description "NSG-Build" --disk-containers file://containers.json')
     start='ImportTaskId": "'
-    ami_id = (output.split(start))[1].split('"')[0]
+    try:
+        ami_id = (output.split(start))[1].split('"')[0]
+    except:
+        print output
+        print start
 
     print '9) Remove the temp files (trust-policy.json, role-policy.json, containers.json)'
     pexpect.run('rm trust-policy.json') 
